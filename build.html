@@ -6,10 +6,56 @@
 -->
 <html>
 	<head>
-		<title>About US - Build Your ADU</title>
+		<title>Build Your ADU - EcoBuild Connect</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script> 
+
+			function changeImage1_1() {
+				var img = document.getElementById("build-adu-1");
+				img.src="images/adu01.webp";
+				b1 = document.getElementById("op1-1").className = "button primary fit";
+				b2 = document.getElementById("op1-2").className = "button fit";
+				return false;
+			}
+
+			function changeImage1_2() {
+				var img = document.getElementById("build-adu-1");
+				img.src="images/g01.webp";
+				b1 = document.getElementById("op1-1").className = "button fit";
+				b2 = document.getElementById("op1-2").className = "button primary fit";
+				return false;
+			}
+
+			function changeImage2_1() {
+				var img = document.getElementById("build-adu-2");
+				img.src="images/i01.webp";
+				b1 = document.getElementById("op2-1").className = "button primary small fit";
+				b2 = document.getElementById("op2-2").className = "button small fit";
+				b3 = document.getElementById("op2-3").className = "button small fit";
+				return false;
+			}
+
+			function changeImage2_2() {
+				var img = document.getElementById("build-adu-2");
+				img.src="images/i02.webp";
+				b1 = document.getElementById("op2-1").className = "button small fit";
+				b2 = document.getElementById("op2-2").className = "button primary small fit";
+				b3 = document.getElementById("op2-3").className = "button small fit";
+				return false;
+			}
+
+			function changeImage2_3() {
+				var img = document.getElementById("build-adu-2");
+				img.src="images/i03.webp";
+				b1 = document.getElementById("op2-1").className = "button small fit";
+				b2 = document.getElementById("op2-2").className = "button small fit";
+				b3 = document.getElementById("op2-3").className = "button primary small fit";
+				return false;
+			}
+			
+		</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -19,7 +65,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Build Your ADU</a></h1>
+						<h1><a href="index.html">EcoBuild Connect</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -40,49 +86,37 @@
 					<article id="main">
 						<header>
 							<h2>Build Your ADU</h2>
-							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+							<p>You ADU in your hand</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
-
-								<h3>Lorem ipsum dolor</h3>
-								<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. </p>
 								<h3>Choose Your Design</h3>
 								<div class="row">
 									<div class="col-6 col-12-medium">
-										<span class="image fit"><img src="images/banner.jpg" alt=""></span>
-										<p><b>Price</b> (estimate): $ 200,000.00</p>
+										<span class="image fit"><img id="build-adu-1" src="images/adu01.webp" alt=""></span>
 									</div>
 									<div class="col-6 col-12-medium">
-										<h5>Options</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary fit">Default</a></li>
-											<li><a href="#" class="button fit">Default</a></li>
-										</ul>
-										<h5>Options</h5>
-										<ul class="actions small">
-											<li><a href="#" class="button small fit">Small</a></li>
-											<li><a href="#" class="button primary small fit">Small</a></li>
-											<li><a href="#" class="button small fit">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-5 col-10-small">
-												<h5>Options</h5>
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Default</a></li>
-													<li><a href="#" class="button small fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-5 col-10-small">
-												<h5>Options</h5>
-												<ul class="actions stacked">
-													<li><a href="#" class="button small fit">Default</a></li>
-													<li><a href="#" class="button primary small fit">Default</a></li>
-												</ul>
-											</div>
-										</div>
+										<span class="image fit"><img id="build-adu-2" src="images/g02.webp" alt=""></span>
 									</div>
 								</div>
+								<div class="row">
+									<div class="col-6 col-12-medium">
+										<h5>Exterior Options</h5>
+										<ul class="actions">
+											<li><button id="op1-1" onclick="changeImage1_1();" class="button primary fit">Default</button></li>
+											<li><button id="op1-2" onclick="changeImage1_2();" class="button fit">Default</button></li>
+										</ul>
+									</div>
+									<div class="col-6 col-12-medium">
+										<h5>Interior Options</h5>
+										<ul class="actions small">
+											<li><button id="op2-1" onclick="changeImage2_1();" class="button small fit">Minimal</a></li>
+											<li><button id="op2-2" onclick="changeImage2_2();" class="button primary small fit">Simple</a></li>
+											<li><button id="op2-3" onclick="changeImage2_3();" class="button small fit">Luxury</a></li>
+										</ul>
+									</div>
+								</div>
+								<p><b>Price</b> (estimate): $ 200,000.00</p>
 								<h4>Your Contact</h4>
 								<form method="post" action="#">
 									<div class="row gtr-uniform">
@@ -125,7 +159,7 @@
 							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy;BUILD YOUR ADU</li>
+							<li>&copy;EcoBuild Connect</li>
 						</ul>
 					</footer>
 

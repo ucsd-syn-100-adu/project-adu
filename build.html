@@ -34,6 +34,7 @@
 				b1 = document.getElementById("op2-1").className = "button primary small fit";
 				b2 = document.getElementById("op2-2").className = "button small fit";
 				b3 = document.getElementById("op2-3").className = "button small fit";
+				document.getElementById("price").textContent="270,000.00";
 				return false;
 			}
 
@@ -43,6 +44,7 @@
 				b1 = document.getElementById("op2-1").className = "button small fit";
 				b2 = document.getElementById("op2-2").className = "button primary small fit";
 				b3 = document.getElementById("op2-3").className = "button small fit";
+				document.getElementById("price").textContent="250,000.00";
 				return false;
 			}
 
@@ -52,6 +54,7 @@
 				b1 = document.getElementById("op2-1").className = "button small fit";
 				b2 = document.getElementById("op2-2").className = "button small fit";
 				b3 = document.getElementById("op2-3").className = "button primary small fit";
+				document.getElementById("price").textContent="300,000.00";
 				return false;
 			}
 			
@@ -94,13 +97,6 @@
 								<div class="row">
 									<div class="col-6 col-12-medium">
 										<span class="image fit"><img id="build-adu-1" src="images/e01.webp" alt=""></span>
-									</div>
-									<div class="col-6 col-12-medium">
-										<span class="image fit"><img id="build-adu-2" src="images/i02.webp" alt=""></span>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-6 col-12-medium">
 										<h5>Exterior Options</h5>
 										<ul class="actions">
 											<li><button id="op1-1" onclick="changeImage1_1();" class="button primary fit">Modern</button></li>
@@ -108,6 +104,7 @@
 										</ul>
 									</div>
 									<div class="col-6 col-12-medium">
+										<span class="image fit"><img id="build-adu-2" src="images/i02.webp" alt=""></span>
 										<h5>Interior Options</h5>
 										<ul class="actions small">
 											<li><button id="op2-1" onclick="changeImage2_1();" class="button small fit">Minimal</a></li>
@@ -116,8 +113,8 @@
 										</ul>
 									</div>
 								</div>
-								<p><b>Price</b> (estimate): $250,000.00</p>
-								<h4>Your Contact</h4>
+								<p><b>Price</b> (estimate): $<span id="price">250,000.00</span></p>
+								<h4>Contact Information</h4>
 								<form method="post" action="#">
 									<div class="row gtr-uniform">
 										<div class="col-6 col-12-xsmall">
@@ -127,7 +124,7 @@
 											<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email">
 										</div>										
 										<div class="col-12">
-											<textarea name="demo-message" id="demo-message" placeholder="Leave a message as you wish" rows="3"></textarea>
+											<textarea name="demo-message" id="demo-message" placeholder="General Inquiry & Additional Customizations" rows="3"></textarea>
 										</div>
 										<div class="col-6 col-12-small">
 											<input type="checkbox" id="demo-human" name="demo-human">
